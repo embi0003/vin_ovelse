@@ -1,15 +1,74 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Hero from '../components/Hero.astro';
+import Stat from '../components/Stat.astro';
+import Card from '../components/Card.astro';
+import PricingCard from '../components/PricingCard.astro';
+import PriceCard from '../components/PriceCard.astro';
+import Form from '../components/Form.astro';
+import Footer from '../components/Footer.astro';
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<MainLayout title="Vin med stil">
+
+	<section class="w-full min-h-[66vh] p-4 sm:p-8 text-center">
+  <Hero />
+</section>
+
+<section class="flex items-center justify-center min-h-[20vh] w-full p-6">
+  <Stat />
+</section>
+
+<section class="max-w-6xl mx-auto p-8">
+  <h2 class="text-3xl font-bold text-center mb-8">Tørstig efter en flaske?</h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+    <Card 
+    />
+    <Card 
+    />
+    <Card 
+    />
+	<Card 
+    />
+	<Card 
+    />
+	<Card 
+    />
+	<Card 
+    />
+	<Card 
+    />
+   
+  </div>
+</section>
+
+<section class="max-w-2xl mx-auto p-8">
+  <h2 class="text-3xl font-bold text-center mb-8">Tørstig efter et abonnement?</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+   
+   
+	<PricingCard 
+	/>
+	<PriceCard 
+	/>
+	
+  </div>
+</section>
+
+<section class="max-w-xl mx-auto p-8 flex flex-col items-center justify-center min-h-[50vh]">
+  <h2 class="text-3xl font-bold text-center mb-8">Spørgsmål?</h2>
+
+  <Form />
+</section>
+
+<section class="w-full mt-16">
+  <div class="w-full bg-base-200">
+    <div class="container mx-auto">
+      <Footer />
+    </div>
+  </div>
+</section>
+
+
 </MainLayout>
