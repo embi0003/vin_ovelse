@@ -1,14 +1,20 @@
+---
+const {url="", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst=""} = Astro.props;
+
+---
+
 <div class="card bg-base-100 w-full shadow-sm">
   <figure>
     <img
-      src="/public/redwine.jpg"
-      alt="Château Rouge 2018" />
+      src={cardimage}
+      alt={cardimagealt}
+    />
   </figure>
   <div class="card-body">
-    <h2 class="card-title">Château Rouge 2018</h2>
-    <p>En fyldig og elegant rødvin med noter af mørke bær, chokolade og et hint af krydderier. Perfekt til aftenens middag eller som gave til vinelskeren.</p>
+    <h2 class="card-title">{cardtitel}</h2>
+    <p>{cardtekst}</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">Køb nu!</button>
+      <button class="btn btn-primary">{cardbuttontekst}</button>
     </div>
   </div>
 </div>
