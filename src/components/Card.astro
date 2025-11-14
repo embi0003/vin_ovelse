@@ -1,11 +1,15 @@
 ---
-const {url="", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst=""} = Astro.props;
+const {url="", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst="", badgenyt="false", badgerabat="false", badgefaatilbage="false"} = Astro.props;
 
 ---
 
-<div class="card bg-base-100 w-full shadow-sm">
-  <figure>
-    <img
+<div class="card bg-base-100 w-full shadow-sm @container">
+  <figure class="relative">
+{(badgenyt === "true") && <div class="badge badge-primary absolute top-4 left-0">Ny vin!</div>}
+{(badgerabat !== "false") && <div class="badge badge-secondary absolute top-4 right-0"><span>{badgerabat} % rabat! </span></div>}
+{(badgefaatilbage === "true") && <div class="badge badge-warning absolute bottom-4 left-0">Få flasker tilbage!</div>}   
+
+<img
       src={cardimage}
       alt={cardimagealt}
     />
