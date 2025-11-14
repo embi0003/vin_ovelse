@@ -1,0 +1,127 @@
+---
+
+import MainLayout from "../layouts/MainLayout.astro";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+
+---
+
+<MainLayout title="Komponentbibliotek">
+  <main class="container mx-auto p-4 space-y-12 mt-40">
+    <Heading htmlheading="h1" size="large" weight="bold" color="white" class="mb-1">
+      Komponentbibliotek
+    </Heading>
+    
+    
+    <Text teksttype="brødtekst">
+      Her kan du finde alle vores egne komponenter, brugt i forskellige
+      variationer.
+    </Text>
+
+
+    <!-- Typografi -->
+    <section>
+<Heading htmlheading="h1" size="large" color="white" weight="bold" stylingClasses="mb-6">Headings</Heading>
+
+
+<Heading htmlheading="hero" size="xlarge" weight="bold">Hero</Heading>
+<Heading htmlheading="h1" size="large"  font="display">H1 - overskrift</Heading>
+<Heading htmlheading="h2" size="medium" font="display">H2 - overskrift</Heading>
+<Heading htmlheading="h3" size="small" font="display">H3 - overskrift</Heading>
+<Heading htmlheading="h4" size="xsmall" font="display">H4 - overskrift</Heading>
+    </section>
+    <hr class="my-6" />
+
+    <!-- Typografi -->
+    <section>
+<Heading htmlheading="h2" size="medium" color="white" weight="bold" stylingClasses="mb-6">Typografi</Heading>
+
+<Text teksttype="manchet" stylingclasses="pt-8">
+Manchet
+</Text>
+
+<Text teksttype="brødtekst" stylingclasses="pt-8">
+Brødtekst
+</Text>
+
+<Text teksttype="konsultativ" stylingclasses="pt-8">
+    Konsultativ
+    </Text>
+
+    </section>
+
+    <hr class="my-6" />
+
+    <!-- Buttons -->
+    <section>
+        <Heading htmlheading="h2" size="medium" color="white" weight="bold" stylingClasses="mb-6">Buttons</Heading>
+
+        <p><Button>Default knap</Button></p>
+        <p><Button variant="primary" size="small">Small Primary Knap size small</Button></p>
+        <p><Button variant="secondary" size="medium">Medium Secondary Knap size medium</Button></p>
+        <p><Button variant="accent" size="large">Large Accent Knap size large</Button></p>
+        <p><Button variant="info">Info Knap</Button></p>
+        <p><Button variant="success">Success Knap</Button></p>
+        <p><Button variant="warning">Warning Knap</Button></p>
+        <p><Button variant="error">Error Knap</Button></p>
+        <p><Button variant="neutral">Neutral Knap</Button></p>
+
+    </section>
+
+    <hr class="my-6" />
+
+    <!-- Links -->
+    <section>
+        <Heading htmlheading="h2" size="medium" color="white" weight="bold" stylingClasses="mb-6">Links</Heading>
+
+        <p><Link>Default link:</Link>Default linket er en del af en tekst og burde gerne fungere som et <Link>link</Link></p>
+        <p><Link href="#" variant="primary">Variant primary</Link></p>
+        <p><Link href="#" variant="primary" size="small">Variant primary size small</Link></p>
+        <p><Link href="#" variant="primary" size="medium">Variant primary size medium</Link></p>
+        <p><Link href="#" variant="primary" size="large">Variant primary size large</Link></p>
+        <p><Link href="#" variant="secondary">Variant secondary</Link></p>
+        <p><Link href="#" variant="secondary" size="small">Variant secondary size small</Link></p>
+        <p><Link href="#" variant="secondary" size="medium">Variant secondary size medium</Link></p>
+        <p><Link href="#" variant="secondary" size="large">Variant secondary size large</Link></p>
+        <p><Link href="#" variant="accent">Variant accent</Link></p>
+        <p><Link href="#" variant="info">Variant info</Link></p>
+        <p><Link href="#" variant="success">Variant success</Link></p>
+        <p><Link href="#" variant="warning">Variant warning</Link></p>
+        <p><Link href="#" variant="error">Variant error</Link></p>
+        <p><Link href="#" variant="neutral">Variant neutral</Link></p>
+
+
+
+    </section>
+
+    <hr class="my-6" />
+
+    <!-- Picturecard -->
+    <section>
+      <Heading htmlheading="h2" size="medium">Picturecard</Heading>
+      <div class="max-w-sm">
+      
+      </div>
+    </section>
+
+    <hr class="my-6" />
+
+    <!-- Submitform -->
+    <section>
+     
+    </section>
+
+    <hr class="my-6" />
+
+    <!-- Header & Footer -->
+    <section>
+      <Heading htmlheading="h2" size="medium">Header</Heading>
+    </section>
+
+   
+
+   
+  </main>
+</MainLayout>
